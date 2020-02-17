@@ -31,5 +31,5 @@
 
   [[zh.menu.main]]
     name = "简历"
-    url = "files/cv-zh.pdf"
+    url = "../files/cv-zh.pdf"
     weight = 50
