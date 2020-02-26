@@ -3,7 +3,7 @@
 
 title: "逻辑回归（Logistic Regression）"
 subtitle: ""
-summary: "廓清逻辑回归中涉及的术语以及从最大似然到最小化代价函数"
+summary: "理解逻辑回归中涉及的术语以及从最大似然到最小化代价函数"
 authors: ["杜利强"]
 tags: ["logistic-regression", "逻辑回归"]
 categories: ["机器学习"]
