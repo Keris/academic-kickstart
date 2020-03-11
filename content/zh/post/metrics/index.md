@@ -61,7 +61,7 @@ $$\text{Accuracy} = \frac{\text{\#TP} + \text{\#TN}}{\text{\#TP} + \text{\#FP} +
 
 对于图1中的模型，准确率计算如下：
 
-$$\text{Accuracy} = \frac{6 + 5}{6 + 1 + 5 + 2} = \frac{11}{14}= 78.57\%$$
+$$\text{Accuracy} = \frac{6 + 5}{6 + 1 + 5 + 2} = \frac{11}{14}= 78.57\\%$$
 
 准确率在数据偏斜的情况下将不再适用。比如在下图所示的例子中：
 
@@ -76,7 +76,7 @@ $$\text{Precision} = \frac{\text{\#TP}}{\text{\#TP} + \text{\#FP}}$$
 
 对于图1中的模型，精度计算如下：
 
-$$\text{Precision} = \frac{6}{6 + 2} = \frac{6}{8} = 75\%$$
+$$\text{Precision} = \frac{6}{6 + 2} = \frac{6}{8} = 75\\%$$
 
 ## Recall
 Recall即为召回率，所有的正例样本中真正例所占的比例：
@@ -85,7 +85,7 @@ $$\text{Recall} = \frac{\text{\#TP}}{\text{\#TP} + \text{\#FN}}$$
 
 对于图1中的模型，召回率计算如下：
 
-$$\text{Recall} = \frac{6}{6 + 1} = \frac{6}{7} = 85.71\%$$
+$$\text{Recall} = \frac{6}{6 + 1} = \frac{6}{7} = 85.71\\%$$
 
 ## F1 score
 F1-score定义如下：
