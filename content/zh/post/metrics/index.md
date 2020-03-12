@@ -132,3 +132,67 @@ $$\text{FPR} = \frac{\text{\#FP}}{\text{\#FP} + \text{\#TN}}$$
 AUC的全称为Area Under a ROC Curve，即ROC曲线下的面积。
 
 {{< figure src="AUC.png" numbered="true" >}}
+
+### 回归指标
+
+1. Mean Absolute Error (MAE)
+
+MAE即平均绝对误差，假设我们有一组样本$\{x_i, y_i\}, i = 1, 2, \cdots, n$，模型的输出为$\text{preds} = [p_1, p_2, \cdots, p_n]$，则MAE计算如下：
+
+$$\text{MAE} = \frac{1}{n}\sum_i^n |y_i - p_i|$$
+
+借助`sklearn`，我们可以很方便地计算MAE：
+
+```python
+from sklearn.metrics import mean_absolute_error
+from sklearn.linear_model import LinearRegression
+clf = LinearRegression()
+preds = clf.fit(X, y)
+error = mean_absolute_error(y, preds)
+```
+
+从公式来看，MAE不可导，使得不能采用梯度下降方法进行优化，此时我们可以借助均方误差。
+
+2. Mean Squared Error (MSE)
+
+MSE即均方误差，定义如下：
+
+$$\text{MSE} = \frac{1}{n}\sum_i^n (y_i - p_i)^2$$
+
+同样地，MSE通过`sklearn`可以很方便地进行计算：
+```python
+from sklearn.metrics import mean_squared_error
+from sklearn.linear_model import LinearRegression
+clf = LinearRegression()
+preds = clf.fit(X, y)
+error = mean_squared_error(y, preds)
+```
+
+3. R2 Score
+
+R2分数通过将现有的模型与最简单的可能模型相比得出。
+
+比如，我们要拟合一堆数据点，那最简单的可能模型是什么？那就是我们取所有值的平均值，然后画一条水平线。此时我们可以计算出这个模型的均方误差大于线性回归模型的均方误差，如下图所示：
+
+{{< figure src="r2.png" numbered="true" >}}
+
+R2分数定义为：
+
+$$\text{R2} = 1 - \frac{\text{MSE of 当前模型}}{\text{MSE of 最简单的可能模型}}$$
+
+以上图为例，分子为线性回归模型（右侧）的均方误差，分母为简单模型（左侧）的均方误差。
+
+由于最简单的可能模型的均方误差大于线性回归模型的均方误差，我们在相比之后得到一个0到1之间的数字，从而R2得分也是一个0到1之间的数，并且有以下结论：
+
+- R2越接近0，我们的模型越接近最简单的可能模型，此时模型是一个bad model
+- 相反，R2越接近1，说明我们模型相比最简单的可能模型具有更小的均方误差，此时模型是一个good model
+
+在`sklearn`中，我们如下计算R2得分：
+
+```python
+>>> from sklearn.metrics import r2_score
+>>> y_true = [1, 2, 4]
+>>> y_pred = [1.3, 2.5, 3.7]
+>>> r2_score(y_true, y_pred)
+>>> 0.9078571428571429
+```
