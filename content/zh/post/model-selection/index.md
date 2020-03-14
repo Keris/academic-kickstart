@@ -197,7 +197,7 @@ plt.figure(figsize=(12, 6))
 
 for i, m in enumerate(estimators):
     train_sizes, train_scores, test_scores = learning_curve(
-        estimators[m], X2, y2, cv=None, n_jobs=1, train_sizes=np.linspace(.1, 1.0, 3))
+        estimators[m], X2, y2, cv=None, n_jobs=1, train_sizes=np.linspace(.1, 1.0, 10))
     train_scores_mean = np.mean(train_scores, axis=1)
     # train_scores_std = np.std(train_scores, axis=1)
     test_scores_mean = np.mean(test_scores, axis=1)
@@ -225,7 +225,24 @@ plt.show()
 
 {{< figure src="learning-curves.png" >}}
 
-这里我们要注意的一个地方是图中使用了得分而不是误差，得分跟误差恰好相反，所以在看图时我们要在脑海里试着将其倒过来。
+根据这些曲线可以得出：
 
-根据前面讲的不难分析出，决策树模型刚刚好，逻辑回归模型欠拟合，而支持向量机模型过拟合。
-比如对支持向量机模型而言，模型在训练集上一直具有很高的得分（接近1），这意味着模型能够很好的拟合训练集，因此具有很小的训练误差，但在验证集上，得分一开始就不高，接着是减小，后趋于不变，这意味验证误差从一个较小值变大，然后收敛。训练得分和验证得分最后收敛，但不靠近。
+- 逻辑回归模型的训练和测试得分很低。
+- 决策树模型的训练和测试得分很高。
+- 支持向量机模型的训练得分很高，测试得分很低
+
+因此，决策树模型刚刚好，逻辑回归模型欠拟合，而支持向量机模型过拟合。
+
+同样，我们可以反转这些曲线（因为度量使用的是得分而不是误差）然后与下图进行对比。
+
+{{< figure src="learning-curves-2.png" >}}
+
+最后，我们看一下在实际情况中是否也这样，为此我们绘制模型的边界曲线：
+
+{{< figure src="models-boundary.png" >}}
+
+我们可以看到：
+
+- 逻辑回归模型使用一条直线，这太简单了。在训练集上的效果不太好，因此欠拟合。
+- 决策树模型使用一个方形，拟合的很好，并能够泛化。因此，该模型效果很好。
+- 支持向量机模型实际上在每个点周围都画了一个小圆圈。它实际上是在记住训练集，无法泛化。因此，过拟合。
