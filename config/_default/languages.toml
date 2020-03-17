@@ -24,12 +24,12 @@
     url = "#posts"
     weight = 20
 
-  [[zh.menu.main]]
-    name = "项目"
-    url = "#projects"
-    weight = 30
+#  [[zh.menu.main]]
+#    name = "项目"
+#    url = "#projects"
+#    weight = 30
 
   [[zh.menu.main]]
     name = "简历"
     url = "../files/cv-zh.pdf"
-    weight = 50
+    weight = 30
