@@ -3,7 +3,7 @@
 
 title: "评估指标"
 subtitle: ""
-summary: "了解机器学习模型的评估指标"
+summary: "了解机器学习模型的各种评估指标"
 authors: []
 tags: ["评估指标"]
 categories: [机器学习]

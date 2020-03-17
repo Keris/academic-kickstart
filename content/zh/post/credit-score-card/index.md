@@ -3,7 +3,7 @@
 
 title: "信用评分卡模型"
 subtitle: ""
-summary: "通过此文了信用评分卡模型的方方面面"
+summary: "学习信用评分卡模型的全流程"
 authors: []
 tags: [评分卡]
 categories: [金融风控]
