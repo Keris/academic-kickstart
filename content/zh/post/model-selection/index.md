@@ -1,12 +1,12 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "模型选择"
+title: "机器学习模型选择"
 subtitle: ""
-summary: "如何选择一个好的机器模型，欠拟合和过拟合判断"
-authors: []
-tags: []
-categories: []
+summary: "如何选择一个好的机器学习模型，欠拟合和过拟合判断"
+authors: [杜利强]
+tags: ["欠拟合", "过拟合", "交叉验证"]
+categories: [机器学习]
 date: 2020-03-13T19:14:06+08:00
 lastmod: 2020-03-13T19:14:06+08:00
 featured: false
