@@ -133,13 +133,13 @@ AUC的全称为Area Under a ROC Curve，即ROC曲线下的面积。
 
 {{< figure src="AUC.png" numbered="true" >}}
 
-### 回归指标
+## 回归指标
 
 1. Mean Absolute Error (MAE)
 
-MAE即平均绝对误差，假设我们有一组样本$\{x_i, y_i\}, i = 1, 2, \cdots, n$，模型的输出为$\text{preds} = [p_1, p_2, \cdots, p_n]$，则MAE计算如下：
+MAE即平均绝对误差，假设我们有一组样本$\{x_i, y_i\}, i = 1, 2, \cdots, n$，模型的输出为$\text{preds} = [\hat{y}_1, \hat{y}_2, \cdots, \hat{y}_n]$，则MAE计算如下：
 
-$$\text{MAE} = \frac{1}{n}\sum_i^n |y_i - p_i|$$
+$$\text{MAE} = \frac{1}{n}\sum_i^n |y_i - \hat{y}_i|$$
 
 借助`sklearn`，我们可以很方便地计算MAE：
 
@@ -157,7 +157,7 @@ error = mean_absolute_error(y, preds)
 
 MSE即均方误差，定义如下：
 
-$$\text{MSE} = \frac{1}{n}\sum_i^n (y_i - p_i)^2$$
+$$\text{MSE} = \frac{1}{n}\sum_i^n (y_i - \hat{y}_i)^2$$
 
 同样地，MSE通过`sklearn`可以很方便地进行计算：
 ```python
