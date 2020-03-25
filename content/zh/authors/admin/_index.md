@@ -20,16 +20,16 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: "一个努力的30岁。"
 
-interests:
-- 风控系统和模型
-- 信息检索
+#interests:
+#- 人工智能
+
 
 education:
  courses:
- - course: 计算机科学与技术硕士
+ - course: 计算机科学与技术 硕士
    institution: 中国农业大学
    year: 2014
- - course: 电子科学与技术学士
+ - course: 电子信息科学与技术 理学学士
    institution: 中国科学与技术大学
    year: 2008
 
@@ -44,9 +44,9 @@ social:
 - icon: weibo
   icon_pack: fab
   link: https://weibo.com/1855772372
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/duliqiang
+#- icon: twitter
+#  icon_pack: fab
+#  link: https://twitter.com/duliqiang
 #- icon: google-scholar
 #  icon_pack: ai
 #  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
@@ -69,6 +69,6 @@ email: "dlq137@gmail.com"
 #- Visitors
 ---
 
-我是杜利强，现在是友信金服反欺诈部的一名工程师。我是一名机器学习爱好者，在业余时间完成了优达机器学习工程师纳米学位。其他时候，我会阅读、健身和写作。阅读让我开阔了视野，健身让我精力充沛，写作主要是写日记，有一天我想写小说。
+我是杜利强，现在是友信金服反欺诈部的一名工程师。我是一名人工智能爱好者，在业余时间我完成了优达机器学习工程师纳米学位。其他时候，我会阅读、健身和写作。阅读让我视野得到不断开阔，更加了解自己的无知；健身让我精力充沛、充满能量；写作让我建立与自己之间的对话，或反省或抒情。
 
-*我当前正在计划换工作，如果你感兴趣，请点击左侧的**CV**或者菜单栏中的**简历**以详细了解我，如果你感兴趣，请毫不犹豫联系我*。
+>我当前正在计划换工作，如果你感兴趣，请点击左侧的**CV**或者上方的**简历**以详细了解我，如果你感兴趣，请毫不犹豫联系我 :smile:。

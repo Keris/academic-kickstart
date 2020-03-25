@@ -2,11 +2,11 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "先手优势"
-subtitle: "投掷一枚硬币，先出现正面者为赢，先手好还是后手？"
-summary: ""
+subtitle: "投掷一枚硬币，先出现正面者为赢，先手还是后手？"
+summary: "先手意味着主动，从概率上讲获胜的可能性也更大"
 authors: [杜利强]
 tags: ["先手", "概率"]
-categories: [""]
+categories: ["数学"]
 date: 2020-03-24T14:00:50+08:00
 lastmod: 2020-03-24T14:00:50+08:00
 featured: false
@@ -16,8 +16,8 @@ draft: false
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
-  caption: ""
-  focal_point: ""
+  caption: "Photo by ZSun Fu on Unsplash"
+  focal_point: "Smart"
   preview_only: false
 
 # Projects (optional).
@@ -32,7 +32,7 @@ projects: []
 *两个人玩投掷硬币的游戏，先掷出正面的人获胜，那么你是选择先掷还是后掷？*
 
 ## 数学解法
-假设硬币是公平的，即出现正面和反面的概率一样，均为`1/2`。我们用`H`表示正面朝上，`T`表示反面朝上。那么，在先手下获胜的情况是第`n`次掷得正面，前`n-1`次都为反面，其中`n`为奇数。所以先手获胜的概率为
+假设硬币是公平的，即出现正面和反面的概率一样，均为`1/2`。那么，在先手下获胜的情况是第`n`次掷得正面，前`n-1`次都为反面，其中`n`为奇数。所以先手获胜的概率为
 
 $$p(\text{win}|\text{first}) = \sum_{k=0}^{\infty}(\frac{1}{2})^{2k + 1} = \frac{2}{3}$$
 
@@ -92,4 +92,4 @@ $ python code.py
 ```
 我们模拟了10万次游戏，程序返回的结果跟数学求解结果十分接近。
 
-好了，文章到此就完了。这里我通过一个简单的游戏说明了先手的好处，这告诉我们一个道理，主动出击获得先手优势往往更能够成功。
+至此文章就完了。在这里我通过一个简单的游戏说明了先手的好处，这告诉我们一个道理，主动出击获得先手优势往往更能够成功。
