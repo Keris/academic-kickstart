@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: 开发工程师
+role: 算法工程师
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: "https://www.youxin.com/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: "一个努力的30岁。"
+bio: "一个30岁的程序员。"
 
 #interests:
 #- 人工智能
@@ -69,6 +69,4 @@ email: "dlq137@gmail.com"
 #- Visitors
 ---
 
-我是杜利强，现在是友信金服反欺诈部的一名工程师。我是一名人工智能爱好者，在业余时间我完成了优达机器学习工程师纳米学位。其他时候，我会阅读、健身和写作。阅读让我视野得到不断开阔，更加了解自己的无知；健身让我精力充沛、充满能量；写作让我建立与自己之间的对话，或反省或抒情。
-
->我当前正在计划换工作，如果你感兴趣，请点击左侧的**CV**或者上方的**简历**以详细了解我，如果你感兴趣，请毫不犹豫联系我 :smile:。
+我是杜利强，今年30有余，过了10月便是31，甘肃陇南人氏。在这个地方，我希望记录自己，便于我回头再看的时候发现自己有所成长。各位看官（可能一个也没有）如果有想法可以留言，也可以发邮件给我，甚至直接给我打电话。

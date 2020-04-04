@@ -18,23 +18,14 @@ date_format = "2006/01"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "开发工程师"
+  title = "算法工程师"
   company = "友信金服"
   company_url = "https://www.youxin.com/"
   location = "北京"
   date_start = "2018-10-16"
   date_end = ""
   description = """
-  主要工作:
-
-  * 设计和搭建用户关系网络，并基于此：
-  
-    - 离线挖掘公共服务电话，打标用户
-    - 开发图查询用于获取统计特征，进行模式匹配和失联修复
-    - 组织开发网络可视化平台
-  * 手机应用列表数据分析和建模
-  * 用户行为数据分析和建模
-  * 设计和实现黑名单系统
+  主要工作: 风控系统建设、数据分析和建模、知识图谱搭建和数据挖掘
   """
 
 [[experience]]
@@ -43,12 +34,9 @@ date_format = "2006/01"
   company_url = "https://www.weibo.com"
   location = "北京"
   date_start = "2017-01-01"
-  date_end = "2018-09-10"
+  date_end = "2018-08-10"
   description = """
-  主要工作：
-
-  * 建设数据管道，包括数据获取，分发，计算和入库
-  * 负责优化文章排序
+  主要工作：大数据计算、分布式存储和搜索排序模型
   """
 
 [[experience]]
@@ -58,6 +46,6 @@ date_format = "2006/01"
   location = "北京"
   date_start = "2012-07-01"
   date_end = "2013-10-30"
-  description = """序列比对和组装开发"""
+  description = """DNA序列比对、组装开发"""
 
 +++
