@@ -117,7 +117,7 @@ def simulate2(p, n=1000):
     y = moving_avg(heads)
     plt.plot(x, y)
     plt.plot(x, np.ones(1000) * p * n)
-    plt.xlabel('The number of tosses')
+    plt.xlabel('The number of experiments')
     plt.ylabel('The number of heads')
     plt.title(f'p = {p}')
     plt.show()
