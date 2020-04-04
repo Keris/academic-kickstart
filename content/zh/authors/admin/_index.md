@@ -18,7 +18,7 @@ organizations:
   url: "https://www.youxin.com/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: "一个30岁的程序员。"
+bio: "程序员、作家杜利强。"
 
 #interests:
 #- 人工智能
@@ -69,4 +69,4 @@ email: "dlq137@gmail.com"
 #- Visitors
 ---
 
-我是杜利强，今年30有余，过了10月便是31，甘肃陇南人氏。在这个地方，我希望记录自己，便于我回头再看的时候发现自己有所成长。各位看官（可能一个也没有）如果有想法可以留言，也可以发邮件给我，甚至直接给我打电话。
+在这个地方，我记录自己，便于回头再看的时候发现自己有所成长。欢迎留言或邮件给我。
