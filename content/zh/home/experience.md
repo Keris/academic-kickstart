@@ -46,6 +46,6 @@ date_format = "2006/01"
   location = "北京"
   date_start = "2012-07-01"
   date_end = "2013-10-30"
-  description = """DNA序列比对、组装开发"""
+  description = """主要工作：DNA序列比对、组装开发"""
 
 +++
