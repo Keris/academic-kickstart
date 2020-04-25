@@ -18,7 +18,7 @@ organizations:
   url: "https://www.youxin.com/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: "程序员、作家杜利强。"
+bio: "程序员、作家。"
 
 #interests:
 #- 人工智能
